@@ -456,6 +456,11 @@ button:hover {
 .tips{
     flex-direction: column;
 }
+.tips .divmateriales, .divlavado{
+    width: 300px;
+    height: auto;
+    margin: 5px;
+}
 }
 
 @media screen and (max-width: 499px) {
