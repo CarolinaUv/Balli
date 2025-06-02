@@ -484,6 +484,7 @@ button:hover {
     flex-direction: column;
     text-decoration: none;
     color: black;
+    font-size: 10px;
 }
 
 .seguinos{
@@ -496,12 +497,19 @@ button:hover {
     padding: 1px;
 }
 footer img{
-    width: 40px;
+    width: 35px;
     height: auto;
 }
 
 footer iframe{
     width: 100px;
     height: 100px;
+}
+}
+
+@media screen and (max-width: 670px) {
+.catalogo{
+    display: flex;
+    flex-direction: column;
 }
 }
