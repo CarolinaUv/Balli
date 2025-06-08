@@ -42,15 +42,6 @@ img{
     height: auto;
 }
 
-.boton{
-    background-color: rgba(186, 240, 222, 0.459);
-    font-size: 25px;
-    margin: 40px;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-
 .whatsapp img{
     width: 50px;
     height: 50px;
@@ -384,7 +375,8 @@ footer iframe{
 .formulario-contacto {
     display: grid;
     max-width: 600px;
-    margin-left: 400px;
+    margin: 0 auto;
+    width: 90%;
     background-color: beige;
     padding: 30px;
     border-radius: 8px;
@@ -513,3 +505,4 @@ footer iframe{
     flex-direction: column;
 }
 }
+
