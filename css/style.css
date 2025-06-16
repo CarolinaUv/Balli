@@ -328,7 +328,8 @@ footer iframe{
 
 .tarjeta{
     width: 300px;
-    border: 2px solid black;
+    border: none;
+    border-radius: 8px;
     background-color: beige;
     display: flex;
     flex-direction: column;
