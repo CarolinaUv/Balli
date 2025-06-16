@@ -1,0 +1,37 @@
+header{
+        background-color: beige;
+        position: sticky;
+        top: 0; 
+        z-index: 9999;
+    }
+        .imgcontainer{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            ". img .";
+            img{
+                grid-area: img;
+                justify-self: center;
+                max-width: 100% ;
+            }
+        }
+        .bg-body-tertiary {
+            background-color: rgba(175, 240, 218, 0.555) !important;
+  }
+
+  .nav-link {
+    color: black;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    a {
+      font-size: 20px;
+      padding: 5px;
+    }
+  }
