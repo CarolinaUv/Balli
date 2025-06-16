@@ -58,22 +58,24 @@ header {
   top: 0;
   z-index: 9999;
 }
-
-.imgcontainer {
+header .imgcontainer {
   width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: ". img .";
 }
-.imgcontainer img {
+header .imgcontainer img {
   grid-area: img;
   justify-self: center;
   max-width: 100%;
 }
-
-.bg-body-tertiary {
+header .bg-body-tertiary {
   background-color: rgba(175, 240, 218, 0.555) !important;
+}
+header .bg-body-tertiary .container-fluid .navbar-brand img {
+  width: 50%;
+  height: auto;
 }
 
 .nav-link {
@@ -310,37 +312,36 @@ footer .ubicacion iframe {
   height: 150px;
 }
 
-.catalogo {
+.section .productos .catalogo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   background-color: rgba(255, 228, 196, 0.4);
   padding: 20px;
 }
-.catalogo .tarjeta {
+.section .productos .catalogo .tarjeta {
   width: 300px;
-  border: 2px solid black;
   background-color: beige;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin: 10px;
 }
-.catalogo .tarjeta .tarjeta-header {
+.section .productos .catalogo .tarjeta .tarjeta-header {
   width: 100%;
   padding: 10px;
   font-weight: bold;
   text-align: center;
   font-size: 1.1rem;
 }
-.catalogo .tarjeta img {
+.section .productos .catalogo .tarjeta img {
   width: 80%;
   max-height: 100%;
   object-fit: contain;
   margin: 15px 0;
 }
-.catalogo .tarjeta button {
+.section .productos .catalogo .tarjeta button {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(175, 240, 218, 0.8);
@@ -353,7 +354,7 @@ footer .ubicacion iframe {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
-.catalogo .tarjeta button:hover {
+.section .productos .catalogo .tarjeta button:hover {
   background-color: rgba(100, 200, 180, 0.9);
 }
 
