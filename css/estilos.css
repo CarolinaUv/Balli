@@ -333,14 +333,14 @@ footer .ubicacion iframe {
   height: 150px;
 }
 
-.section .productos .catalogo {
+.productos .catalogo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   background-color: rgba(255, 228, 196, 0.4);
   padding: 20px;
 }
-.section .productos .catalogo .tarjeta {
+.productos .catalogo .tarjeta {
   width: 300px;
   background-color: beige;
   border: none;
@@ -351,20 +351,20 @@ footer .ubicacion iframe {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin: 10px;
 }
-.section .productos .catalogo .tarjeta .tarjeta-header {
+.productos .catalogo .tarjeta .tarjeta-header {
   width: 100%;
   padding: 10px;
   font-weight: bold;
   text-align: center;
   font-size: 1.1rem;
 }
-.section .productos .catalogo .tarjeta img {
+.productos .catalogo .tarjeta img {
   width: 80%;
   max-height: 100%;
   object-fit: contain;
   margin: 15px 0;
 }
-.section .productos .catalogo .tarjeta button {
+.productos .catalogo .tarjeta button {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(175, 240, 218, 0.8);
@@ -377,7 +377,7 @@ footer .ubicacion iframe {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
-.section .productos .catalogo .tarjeta button:hover {
+.productos .catalogo .tarjeta button:hover {
   background-color: rgba(100, 200, 180, 0.9);
 }
 
@@ -457,22 +457,18 @@ main {
 }
 
 @media screen and (max-width: 507px) {
-  main section .tips {
+  .tips {
     flex-direction: column;
   }
-  main section .tips .divmateriales {
-    width: 300px;
-    height: auto;
-    margin: 5px;
-  }
-  main section .tips .divlavado {
+  .tips .divmateriales,
+  .tips .divlavado {
     width: 300px;
     height: auto;
     margin: 5px;
   }
 }
 @media screen and (max-width: 499px) {
-  section div .carousel-inner .carousel-item img {
+  .carousel-inner .carousel-item img {
     padding: 5px;
   }
 }
@@ -498,7 +494,7 @@ main {
   .seguinos h3 {
     font-size: 15px;
   }
-  .seguinos h3 a img {
+  .seguinos a img {
     width: 35px;
     height: auto;
   }
@@ -515,7 +511,7 @@ main {
   }
 }
 @media screen and (max-width: 670px) {
-  .productos h1 h2 .catalogo {
+  .catalogo {
     display: flex;
     flex-direction: column;
   }
