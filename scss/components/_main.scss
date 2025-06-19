@@ -1,4 +1,4 @@
-.hero{
+.hero {
     text-align: center;
     height: 500px;
     color: white;
@@ -11,56 +11,86 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-//*ACERCA DE MI
-.acercademi-container{
-    background-color: bisque;
-    padding: 0px;
-    h2{
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 0px;
-        color: black;
 
+    .boton {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgba(175, 240, 218, 0.8);
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: rgba(100, 200, 180, 0.9);
+        }
     }
-    .acercademi{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
+    }
+
+    //*ACERCA DE MI
+    .acercademi-container {
         background-color: bisque;
-        padding: 20px;
-        .acercademi-texto{
-            flex: 1 1 60%;
-            padding: 10px;
-            p{
-                margin: 10px 0;
-                padding: 5px;
-                font-weight: bold;
-                font-size: 1.1rem;
-            }
+        padding: 0px;
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 0px;
+            color: black;
+
         }
-        .acercademi-imagen{
-            flex: 1 1 30%;
+
+        .acercademi {
             display: flex;
-            justify-content: center;
+            flex-wrap: wrap;
             align-items: center;
-            img{
-                max-width: 100%;
-                height: auto;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            justify-content: space-between;
+            background-color: bisque;
+            padding: 20px;
+
+            .acercademi-texto {
+                flex: 1 1 60%;
+                padding: 10px;
+
+                p {
+                    margin: 10px 0;
+                    padding: 5px;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                }
+            }
+
+            .acercademi-imagen {
+                flex: 1 1 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                }
             }
         }
     }
-}
-//*TIPS
-.tips{
+
+    //*TIPS
+.tips {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    display: flex;
-    justify-content: space-around;
-    .divmateriales{
+    justify-content: center;
+    column-gap: 40px;
+    background-color: bisque;
+    padding: 0% 20% 0% 20%;
+    margin: 0%;
+
+    .divmateriales {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -70,19 +100,22 @@
         border: solid black 2px;
         margin: 10px;
         background-color: beige;
-        h3{
+
+        h3 {
             margin: 0;
             padding: 10px;
             width: 100%;
             background-color: rgba(175, 240, 218, 0.555);
             text-align: center;
         }
-        p{
+
+        p {
             margin: 10px;
             margin-top: 2px;
             width: 90%;
             text-align: center;
-            .boton{
+
+            .boton {
                 display: inline-block;
                 padding: 10px 20px;
                 background-color: rgba(175, 240, 218, 0.8);
@@ -94,25 +127,27 @@
                 text-align: center;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
                 transition: background-color 0.3s ease;
-                &:hover{
+
+                &:hover {
                     background-color: rgba(100, 200, 180, 0.9);
                 }
             }
         }
-        img{
+
+        img {
             width: 250px;
             height: auto;
             display: block;
             margin: 0 auto;
             margin-top: 10px;
-            width: 80%;  
+            width: 80%;
             height: auto;
             max-height: 200px;
             object-fit: contain;
-}
         }
     }
-    .divlavado{
+
+    .divlavado {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -122,19 +157,22 @@
         border: solid black 2px;
         margin: 10px;
         background-color: beige;
-        h3{
+
+        h3 {
             margin: 0;
             padding: 10px;
             width: 100%;
             background-color: rgba(175, 240, 218, 0.555);
             text-align: center;
         }
-        p{
+
+        p {
             margin: 10px;
             margin-top: 2px;
             width: 90%;
             text-align: center;
-            .boton{
+
+            .boton {
                 display: inline-block;
                 padding: 10px 20px;
                 background-color: rgba(175, 240, 218, 0.8);
@@ -146,40 +184,48 @@
                 text-align: center;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
                 transition: background-color 0.3s ease;
-                &:hover{
+
+                &:hover {
                     background-color: rgba(100, 200, 180, 0.9);
                 }
             }
         }
-        img{
+
+        img {
             width: auto;
             height: 100px;
             display: block;
             margin: 0 auto;
             margin-top: 10px;
-            width: 80%;  
+            width: 80%;
             height: auto;
             max-height: 200px;
             object-fit: contain;
         }
-    }
-//*USTEDES
-#carouselExample{
-    max-width: 600px;
-    margin: 0 auto;
-    .carousel-inner{
-        width: 100%;
-        .carousel-item{
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            padding: 10px;
-            img{
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-                padding: 10px;
-            }
-        }    
-    }
+    }    
 }
+
+    //*USTEDES
+    .ustedes-container {
+        background-color: bisque;
+
+        #carouselExample {
+            max-width: 400px;
+            margin: 0 auto;
+
+            .carousel-inner {
+                width: 100%;
+
+                .carousel-item {
+                    width: 100%;
+
+                    img {
+                        width: 100% !important;
+                        height: auto;
+                        object-fit: contain;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }

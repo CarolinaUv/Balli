@@ -63,6 +63,7 @@
     justify-content: center;
     max-width: 100%;
     overflow: hidden;
+
     .iframe {
         max-width: 100%;
         border: none;
@@ -75,7 +76,7 @@
 .formulario-contacto {
     display: grid;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0px auto;
     width: 90%;
     background-color: beige;
     padding: 30px;
@@ -101,7 +102,7 @@
         label {
             margin-bottom: 5px;
             font-weight: bold;
-            }
+        }
 
         input {
             margin-bottom: 15px;
@@ -109,7 +110,7 @@
             border: 1px solid #bbb;
             border-radius: 4px;
             font-size: 14px;
-            }
+        }
 
         textarea {
             margin-bottom: 15px;
@@ -117,7 +118,7 @@
             border: 1px solid #bbb;
             border-radius: 4px;
             font-size: 14px;
-            }
+        }
 
         button {
             display: inline-block;
@@ -137,4 +138,8 @@
             }
         }
     }
+}
+
+main {
+    background-color: bisque;
 }

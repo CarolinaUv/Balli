@@ -21,9 +21,12 @@ footer{
             img{
                 width: 40px;
                 height: auto;
+                transition: 2s;
             }
+            img:hover{
+                transform: translateX(250px);
+            }                   
         }
-
     }
     .ubicacion{
     margin: 3px;

@@ -1,5 +1,6 @@
 header {
-  background-color: beige;
+  /*background-color: rgb(245, 245, 220);*/
+  background: linear-gradient(0deg,rgba(175, 240, 218, 1) 0%, rgba(245, 245, 220, 1) 43%, rgba(245, 245, 220, 1) 100%);
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -17,13 +18,12 @@ header {
     }
   }
 nav.navbar.bg-body-tertiary {
-  background-color: rgba(175, 240, 218, 0.555) !important;
+  background-color: transparent !important;
 
   .navbar-brand {
     img {
       width: 50% !important;
       height: auto;
-      border: 2px solid red !important; // prueba visual
     }
   }
 }
@@ -41,4 +41,5 @@ nav.navbar.bg-body-tertiary {
       padding: 5px;
     }
   }
+}
 }
