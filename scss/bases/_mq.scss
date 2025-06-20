@@ -1,13 +1,13 @@
 @media screen and (max-width: 676px) {
   .tips {
     flex-direction: column;
-    align-items: center;
   }
 
-  .divmateriales,
-  .divlavado {
-    width: 90%;
+  .tips .divmateriales,
+  .tips .divlavado {
+    width: 300px;
     height: auto;
+    margin: 5px;
   }
 }
 
@@ -17,7 +17,7 @@
   }
 }
 
-@media screen and (max-width: 514px) {
+@media screen and (max-width: 556px) {
   .informacion {
     margin: 1px;
     padding: 1px;
@@ -64,9 +64,12 @@
   }
 }
 
-@media screen and (max-width: 670px) {
-  .catalogo {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 1050px) {
+  .productos{
+    .catalogo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
