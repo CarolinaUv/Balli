@@ -338,6 +338,7 @@ footer .ubicacion iframe {
   justify-content: center;
   max-width: 100%;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .video-container .iframe {
   max-width: 100%;
@@ -355,6 +356,8 @@ footer .ubicacion iframe {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .formulario-contacto h1 {
   font-size: 48px;
@@ -402,6 +405,10 @@ footer .ubicacion iframe {
 }
 .formulario-contacto form button:hover {
   background-color: rgba(100, 200, 180, 0.9);
+}
+
+body {
+  background-color: bisque;
 }
 
 main {
