@@ -456,7 +456,7 @@ main {
   background-color: bisque;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 676px) {
   .tips {
     flex-direction: column;
   }
@@ -472,7 +472,7 @@ main {
     padding: 5px;
   }
 }
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 514px) {
   .informacion {
     margin: 1px;
     padding: 1px;
