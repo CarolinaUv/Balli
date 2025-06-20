@@ -59,10 +59,10 @@
   }
 
   .ubicacion iframe {
-    width: 100px;
-    height: 100px;
+      width: 80px !important;
+      height: 80px !important;
+    }
   }
-}
 
 @media screen and (max-width: 1050px) {
   .productos{
@@ -73,3 +73,4 @@
     }
   }
 }
+
