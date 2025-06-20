@@ -1,13 +1,14 @@
 @media screen and (max-width: 676px) {
   .tips {
     flex-direction: column;
+    align-items: center;
   }
 
   .tips .divmateriales,
   .tips .divlavado {
-    width: 300px;
+    width: 90%;
     height: auto;
-    margin: 5px;
+    margin: 10px auto;
   }
 }
 
