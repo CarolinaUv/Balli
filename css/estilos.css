@@ -501,5 +501,16 @@ main {
     align-items: center;
   }
 }
+@media screen and (max-width: 400px) {
+  .formulario-contacto {
+    padding: 20px;
+  }
+  .formulario-contacto h1 {
+    font-size: 30px;
+  }
+  .formulario-contacto p {
+    font-size: 10px;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
