@@ -343,6 +343,11 @@ footer .ubicacion iframe {
   background-color: rgba(100, 200, 180, 0.9);
 }
 
+.cursos .descripcion {
+  margin: 5%;
+  text-align: center;
+}
+
 .video-container {
   display: flex;
   justify-content: center;
@@ -354,6 +359,11 @@ footer .ubicacion iframe {
   max-width: 100%;
   border: none;
   border-radius: 8px;
+}
+
+.mediosdepago {
+  margin: 4%;
+  padding: 2px;
 }
 
 .formulario-contacto {
@@ -423,6 +433,11 @@ body {
 
 main {
   background-color: bisque;
+}
+
+.avisolegal {
+  margin: 4%;
+  padding: 2px;
 }
 
 @media screen and (max-width: 676px) {

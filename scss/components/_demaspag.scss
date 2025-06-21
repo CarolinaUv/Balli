@@ -57,13 +57,19 @@
 }
 
 //*PATRONES Y CURSOS
+.cursos{
+    .descripcion{
+        margin: 5%;
+        text-align: center;
+    }
+}
 .video-container {
     display: flex;
     justify-content: center;
     max-width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
-
+   
     .iframe {
         max-width: 100%;
         border: none;
@@ -71,6 +77,11 @@
     }
 }
 
+//*MEDIOS DE PAGO
+.mediosdepago{
+    margin: 4%;
+    padding: 2px;
+}
 //*CONTACTO
 
 .formulario-contacto {
@@ -148,4 +159,10 @@ body {
 
 main {
     background-color: bisque;
+}
+
+//*AVISO LEGAL
+.avisolegal{
+    margin: 4%;
+    padding: 2px;
 }
