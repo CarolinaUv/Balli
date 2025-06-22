@@ -20,6 +20,11 @@ h1 {
   background-color: rgba(175, 240, 218, 0.555);
   display: flex;
   justify-content: center;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: "Poetsen One", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
 }
 
 h2 {
@@ -29,11 +34,21 @@ h2 {
   background-color: rgba(175, 240, 218, 0.555);
   display: flex;
   justify-content: center;
+  font-size: 35px;
+  font-weight: 200;
+  font-family: "Poetsen One", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
 }
 
 h3 {
   font-size: 25px;
   font-weight: 200;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: "Poetsen One", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
 }
 
 main h3 {
@@ -44,6 +59,8 @@ main h3 {
 p {
   font-size: 20px;
   font-weight: 100;
+  font-family: "Poetsen One", sans-serif;
+  line-height: 1.6;
 }
 
 img {

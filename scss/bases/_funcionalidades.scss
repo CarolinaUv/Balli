@@ -18,3 +18,11 @@ $h2-weight: 200;
 $h3-weight: 200;
 $p-weight: 100;
 
+// Mixin
+@mixin heading-style($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $main-font;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}

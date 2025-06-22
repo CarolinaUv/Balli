@@ -25,6 +25,7 @@ h1{
     background-color: $highlight-bg;
     display: flex;
     justify-content: center;
+    @include heading-style($h1-size, $h1-weight);
 }
 h2 {
     font-size: $h2-size;
@@ -33,11 +34,13 @@ h2 {
     background-color: $highlight-bg;
     display: flex;
     justify-content: center;
+    @include heading-style($h2-size, $h2-weight);
 }
 
 h3 {
     font-size: $h3-size;
     font-weight: $h3-weight;
+    @include heading-style($h3-size, $h3-weight);
 }
 
 main h3 {
@@ -48,6 +51,8 @@ main h3 {
 p {
     font-size: $p-size;
     font-weight: $p-weight;
+    font-family: $main-font;
+    line-height: 1.6;
 }
 
 img {
