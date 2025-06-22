@@ -36,21 +36,7 @@
             }
 
             button {
-                display: inline-block;
-                padding: 10px 20px;
-                background-color: rgba(175, 240, 218, 0.8);
-                border: none;
-                border-radius: 5px;
-                text-decoration: none;
-                color: black;
-                font-weight: bold;
-                text-align: center;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-                transition: background-color 0.3s ease;
-
-                &:hover {
-                    background-color: rgba(100, 200, 180, 0.9);
-                }
+                @extend %boton-estilo;
             }
         }
     }
@@ -134,21 +120,7 @@
         }
 
         button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: rgba(175, 240, 218, 0.8);
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease;
-
-            &:hover {
-                background-color: rgba(100, 200, 180, 0.9);
-            }
+            @extend %boton-estilo;
         }
     }
 }

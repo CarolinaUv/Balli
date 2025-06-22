@@ -1,4 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Permanent+Marker&family=Playwrite+RO:wght@100..400&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap");
+.formulario-contacto form button, .productos .catalogo .tarjeta button, .boton, .hero .boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(175, 240, 218, 0.8);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.formulario-contacto form button:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
+  background-color: rgba(100, 200, 180, 0.9);
+}
+
+.formulario-contacto form button, .productos .catalogo .tarjeta button, .boton, .hero .boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(175, 240, 218, 0.8);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.formulario-contacto form button:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
+  background-color: rgba(100, 200, 180, 0.9);
+}
+
 * {
   font-family: "Poetsen One", sans-serif;
   margin: 0%;
@@ -132,23 +166,6 @@ header .collapse .navbar-collapse .navbar-nav a {
   justify-content: center;
   align-items: center;
 }
-.hero .boton {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(175, 240, 218, 0.8);
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-}
-.hero .boton:hover {
-  background-color: rgba(100, 200, 180, 0.9);
-}
-
 .acercademi-container {
   background-color: bisque;
   padding: 0px;
@@ -232,25 +249,6 @@ header .collapse .navbar-collapse .navbar-nav a {
 .divlavado p {
   text-align: center;
   margin: 10px 0;
-}
-
-.boton {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(175, 240, 218, 0.8);
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-  margin: 10px auto 0;
-}
-
-.boton:hover {
-  background-color: rgba(100, 200, 180, 0.9);
 }
 
 .ustedes-container {
@@ -343,23 +341,6 @@ footer .ubicacion iframe {
   object-fit: contain;
   margin: 15px 0;
 }
-.productos .catalogo .tarjeta button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(175, 240, 218, 0.8);
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-}
-.productos .catalogo .tarjeta button:hover {
-  background-color: rgba(100, 200, 180, 0.9);
-}
-
 .cursos .descripcion {
   margin: 5%;
   text-align: center;
@@ -427,23 +408,6 @@ footer .ubicacion iframe {
   border-radius: 4px;
   font-size: 14px;
 }
-.formulario-contacto form button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(175, 240, 218, 0.8);
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-}
-.formulario-contacto form button:hover {
-  background-color: rgba(100, 200, 180, 0.9);
-}
-
 body {
   background-color: bisque;
 }
