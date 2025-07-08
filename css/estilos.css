@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Permanent+Marker&family=Playwrite+RO:wght@100..400&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap");
-.formulario-contacto form button, .productos .catalogo .tarjeta button, .boton, .hero .boton {
+.formulario-contacto form button, button, .productos .catalogo .tarjeta button, .boton, .hero .boton {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(175, 240, 218, 0.8);
@@ -12,11 +12,11 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
-.formulario-contacto form button:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
+.formulario-contacto form button:hover, button:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
   background-color: rgba(100, 200, 180, 0.9);
 }
 
-.formulario-contacto form button, .productos .catalogo .tarjeta button, .boton, .hero .boton {
+.formulario-contacto form button, button, .productos .catalogo .tarjeta button, .boton, .hero .boton {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(175, 240, 218, 0.8);
@@ -29,7 +29,7 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
-.formulario-contacto form button:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
+.formulario-contacto form button:hover, button:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
   background-color: rgba(100, 200, 180, 0.9);
 }
 
@@ -41,7 +41,7 @@
 
 /*----------GENERAL---------------*/
 header img {
-  width: 300px;
+  width: 200px;
   height: auto;
   margin-top: 5px;
 }
@@ -49,6 +49,7 @@ header img {
 h1 {
   font-size: 40px;
   font-weight: 300;
+  font-family: "Poetsen One", sans-serif;
   padding: 5px;
   text-transform: uppercase;
   background-color: rgba(175, 240, 218, 0.555);
@@ -154,7 +155,7 @@ header .collapse .navbar-collapse .navbar-nav a {
 
 .hero {
   text-align: center;
-  height: 500px;
+  height: 400px;
   color: white;
   background-image: url(../img/imagenlanas.jpg);
   background-position: center;
@@ -222,18 +223,20 @@ header .collapse .navbar-collapse .navbar-nav a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 400px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   border: solid black 2px;
   background-color: beige;
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .divmateriales img,
 .divlavado img {
   width: 100%;
-  max-height: 200px;
+  max-height: 100px;
   object-fit: contain;
   margin-top: 10px;
 }
@@ -311,14 +314,14 @@ footer .ubicacion iframe {
 
 .productos .catalogo {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   background-color: rgba(255, 228, 196, 0.4);
   padding: 20px;
 }
 .productos .catalogo .tarjeta {
-  width: 90%;
-  max-width: 250px;
+  width: 80%;
+  max-width: 200px;
   background-color: beige;
   border: none;
   border-radius: 8px;
