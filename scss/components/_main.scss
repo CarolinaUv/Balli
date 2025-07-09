@@ -1,3 +1,4 @@
+//*HERO
 .hero {
     text-align: center;
     height: 400px;
@@ -15,58 +16,59 @@
     .boton {
         @extend %boton-estilo;
     }
+}
+
+//*ACERCA DE MI
+.acercademi-container {
+    background-color: bisque;
+    padding: 0px;
+
+    h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    color: black;
     }
 
-    //*ACERCA DE MI
-    .acercademi-container {
-        background-color: bisque;
-        padding: 0px;
+    .acercademi {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 20px;
 
-        h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 0px;
+        .acercademi-texto {
+        flex: 1 1 60%;
+        padding: 10px;
+
+            p {
+            margin: 10px 0;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
             color: black;
-
+            }
         }
 
-        .acercademi {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            background-color: bisque;
-            padding: 20px;
+        .acercademi-imagen {
+        flex: 1 1 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-            .acercademi-texto {
-                flex: 1 1 60%;
-                padding: 10px;
-
-                p {
-                    margin: 10px 0;
-                    padding: 5px;
-                    font-weight: bold;
-                    font-size: 1.1rem;
-                }
-            }
-
-            .acercademi-imagen {
-                flex: 1 1 30%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    max-width: 100%;
-                    height: auto;
-                    border-radius: 10px;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                }
-            }
+        img {
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
         }
     }
+}
 
-    //*TIPS
+//*TIPS
 .tips {
   display: flex;
   flex-wrap: wrap;
@@ -75,69 +77,65 @@
   background-color: bisque;
   padding: 20px;
   margin: 0 auto;
+    .divmateriales,
+    .divlavado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px;
+    height: 350px;
+    border: solid black 2px;
+    background-color: beige;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    h3 {
+    text-align: center;
+    background-color: rgba(175, 240, 218, 0.555);
+    padding: 10px;
+    }
+    p {
+    text-align: center;
+    margin: 10px 0;
+    }
+    .boton {
+    @extend %boton-estilo;
+    }
+    img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    margin-top: 10px;
+    }
+    }
 }
 
-.divmateriales,
-.divlavado {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 350px;
-  height: 350px;
-  border: solid black 2px;
-  background-color: beige;
-  padding: 5px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+//*USTEDES
+.ustedes-container {
+background-color: bisque;
 
-.divmateriales img,
-.divlavado img {
-  width: 100%;
-  max-height: 100px;
-  object-fit: contain;
-  margin-top: 10px;
-}
+    #carouselExample {
+    max-width: 400px;
+    margin: 0 auto;
 
-.divmateriales h3,
-.divlavado h3 {
-  text-align: center;
-  background-color: rgba(175, 240, 218, 0.555);
-  padding: 10px;
-}
+        .carousel-inner {
+        width: 100%;
 
-.divmateriales p,
-.divlavado p {
-  text-align: center;
-  margin: 10px 0;
-}
+            .carousel-item {
+            width: 100%;
 
-.boton {
-  @extend %boton-estilo;
-}
-
-    //*USTEDES
-    .ustedes-container {
-        background-color: bisque;
-
-        #carouselExample {
-            max-width: 400px;
-            margin: 0 auto;
-
-            .carousel-inner {
-                width: 100%;
-
-                .carousel-item {
-                    width: 100%;
-
-                    img {
-                        width: 100% !important;
-                        height: auto;
-                        object-fit: contain;
-                        padding: 10px;
-                    }
+                img {
+                width: 100% !important;
+                height: auto;
+                object-fit: contain;
+                padding: 10px;
                 }
             }
         }
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+        background: none !important;
+        }
     }
+}

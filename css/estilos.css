@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Permanent+Marker&family=Playwrite+RO:wght@100..400&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap");
-.formulario-contacto form button, button, .productos .catalogo .tarjeta button, .boton, .hero .boton {
+.formulario-contacto form button, .mediosdepago a, .productos .catalogo .tarjeta button, .tips .divmateriales .boton,
+.tips .divlavado .boton, .hero .boton {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(175, 240, 218, 0.8);
@@ -12,11 +13,13 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
-.formulario-contacto form button:hover, button:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
+.formulario-contacto form button:hover, .mediosdepago a:hover, .productos .catalogo .tarjeta button:hover, .tips .divmateriales .boton:hover,
+.tips .divlavado .boton:hover, .hero .boton:hover {
   background-color: rgba(100, 200, 180, 0.9);
 }
 
-.formulario-contacto form button, button, .productos .catalogo .tarjeta button, .boton, .hero .boton {
+.formulario-contacto form button, .mediosdepago a, .productos .catalogo .tarjeta button, .tips .divmateriales .boton,
+.tips .divlavado .boton, .hero .boton {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(175, 240, 218, 0.8);
@@ -29,7 +32,8 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
-.formulario-contacto form button:hover, button:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
+.formulario-contacto form button:hover, .mediosdepago a:hover, .productos .catalogo .tarjeta button:hover, .tips .divmateriales .boton:hover,
+.tips .divlavado .boton:hover, .hero .boton:hover {
   background-color: rgba(100, 200, 180, 0.9);
 }
 
@@ -86,11 +90,6 @@ h3 {
   margin-bottom: 0.5em;
 }
 
-main h3 {
-  text-align: center;
-  background-color: rgba(175, 240, 218, 0.555);
-}
-
 p {
   font-size: 20px;
   font-weight: 100;
@@ -98,24 +97,28 @@ p {
   line-height: 1.6;
 }
 
-img {
-  width: 200px;
-  height: auto;
-}
-
-.whatsapp img {
-  width: 50px;
-  height: 50px;
-}
-
 .whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
 }
+.whatsapp img {
+  width: 50px;
+  height: 50px;
+}
+
+.carrito {
+  margin-bottom: 70px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.carrito img {
+  width: 50px;
+  height: 50px;
+}
 
 header {
-  /*background-color: rgb(245, 245, 220);*/
   background: linear-gradient(0deg, rgb(175, 240, 218) 0%, rgb(245, 245, 220) 43%, rgb(245, 245, 220) 100%);
   position: sticky;
   top: 0;
@@ -194,6 +197,7 @@ header .collapse .navbar-collapse .navbar-nav a {
   padding: 5px;
   font-weight: bold;
   font-size: 1.1rem;
+  color: black;
 }
 .acercademi-container .acercademi .acercademi-imagen {
   flex: 1 1 30%;
@@ -202,6 +206,7 @@ header .collapse .navbar-collapse .navbar-nav a {
   align-items: center;
 }
 .acercademi-container .acercademi .acercademi-imagen img {
+  width: 300px;
   max-width: 100%;
   height: auto;
   border-radius: 10px;
@@ -217,9 +222,8 @@ header .collapse .navbar-collapse .navbar-nav a {
   padding: 20px;
   margin: 0 auto;
 }
-
-.divmateriales,
-.divlavado {
+.tips .divmateriales,
+.tips .divlavado {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -232,26 +236,23 @@ header .collapse .navbar-collapse .navbar-nav a {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-.divmateriales img,
-.divlavado img {
-  width: 100%;
-  max-height: 100px;
-  object-fit: contain;
-  margin-top: 10px;
-}
-
-.divmateriales h3,
-.divlavado h3 {
+.tips .divmateriales h3,
+.tips .divlavado h3 {
   text-align: center;
   background-color: rgba(175, 240, 218, 0.555);
   padding: 10px;
 }
-
-.divmateriales p,
-.divlavado p {
+.tips .divmateriales p,
+.tips .divlavado p {
   text-align: center;
   margin: 10px 0;
+}
+.tips .divmateriales img,
+.tips .divlavado img {
+  width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  margin-top: 10px;
 }
 
 .ustedes-container {
@@ -272,6 +273,10 @@ header .collapse .navbar-collapse .navbar-nav a {
   height: auto;
   object-fit: contain;
   padding: 10px;
+}
+.ustedes-container #carouselExample .carousel-control-prev:hover,
+.ustedes-container #carouselExample .carousel-control-next:hover {
+  background: none !important;
 }
 
 footer {
@@ -310,6 +315,24 @@ footer .ubicacion {
 footer .ubicacion iframe {
   width: 150px;
   height: 150px;
+}
+
+.materialesindispensables p {
+  margin: 2%;
+  padding: 1px;
+}
+.materialesindispensables ul {
+  margin: 2%;
+  padding: 1px;
+}
+
+.lavadoycuidado p {
+  margin: 2%;
+  padding: 1px;
+}
+.lavadoycuidado ul {
+  margin: 2%;
+  padding: 1px;
 }
 
 .productos .catalogo {
@@ -366,7 +389,6 @@ footer .ubicacion iframe {
   margin: 4%;
   padding: 2px;
 }
-
 .formulario-contacto {
   display: grid;
   max-width: 600px;
@@ -486,6 +508,9 @@ main {
   }
 }
 @media screen and (max-width: 400px) {
+  .hero h1 {
+    font-size: 30px;
+  }
   .formulario-contacto {
     padding: 20px;
   }

@@ -1,13 +1,13 @@
 @media screen and (max-width: 676px) {
   .tips {
     flex-direction: column;
-  }
 
-  .tips .divmateriales,
-  .tips .divlavado {
+    .divmateriales,
+    .divlavado {
     width: 300px;
     height: auto;
     margin: 5px;
+    }
   }
 }
 
@@ -21,44 +21,43 @@
   .informacion {
     margin: 1px;
     padding: 1px;
-  }
 
-  .informacion h3 {
+    h3 {
     font-size: 15px;
-  }
+    }
 
-  .informacion a {
+    a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     color: black;
     font-size: 10px;
+    }
   }
 
   .seguinos {
     margin: 1px;
     padding: 1px;
-  }
 
-  .seguinos h3 {
+    h3 {
     font-size: 15px;
-  }
+    }
 
-  .seguinos a img {
+    img {
     width: 35px;
     height: auto;
+    }
   }
 
   .ubicacion {
     margin: 1px;
     padding: 1px;
-  }
 
-  .ubicacion h3 {
+    h3 {
     font-size: 15px;
-  }
+    }
 
-  .ubicacion iframe {
+    iframe {
       width: 80px !important;
       height: 80px !important;
     }
@@ -75,6 +74,11 @@
 }
 
 @media screen and (max-width: 400px){
+  .hero{
+    h1{
+      font-size: 30px;
+    }
+  }
   .formulario-contacto {
     padding: 20px;
 
